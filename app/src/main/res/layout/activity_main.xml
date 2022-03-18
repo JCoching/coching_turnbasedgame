@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="0dp">
+
+    <TextView
+        android:id="@+id/txtHeroName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="108dp"
+        android:layout_marginEnd="136dp"
+        android:text="Hero Name"
+        app:layout_constraintEnd_toEndOf="@+id/txtCombatLog"
+        app:layout_constraintHorizontal_bias="0.407"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtCombatLog" />
+
+    <TextView
+        android:id="@+id/txtMonsterName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="272dp"
+        android:text="Monster Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtHeroName"
+        app:layout_constraintTop_toTopOf="@+id/txtHeroName" />
+
+    <TextView
+        android:id="@+id/txtHeroMP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="260dp"
+        android:text="Character MP"
+        app:layout_constraintEnd_toEndOf="@+id/txtMonsterHP"
+        app:layout_constraintHorizontal_bias="0.833"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtMonsterHP" />
+
+    <TextView
+        android:id="@+id/txtMonsterMP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="272dp"
+        android:text="Monster MP"
+        app:layout_constraintBottom_toBottomOf="@+id/txtHeroMP"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.173"
+        app:layout_constraintStart_toStartOf="@+id/txtHeroMP" />
+
+    <TextView
+        android:id="@+id/txtHeroHP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="156dp"
+        android:text="Character HP"
+        app:layout_constraintEnd_toEndOf="@+id/btnNxtTurn"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnNxtTurn" />
+
+    <TextView
+        android:id="@+id/txtMonsterHP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="272dp"
+        android:text="Monster HP"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.163"
+        app:layout_constraintStart_toStartOf="@+id/txtHeroHP"
+        app:layout_constraintTop_toTopOf="@+id/txtHeroHP" />
+
+    <TextView
+        android:id="@+id/txtHeroDPS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="276dp"
+        android:text="Hero Damage"
+        app:layout_constraintEnd_toEndOf="@+id/txtMonsterName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtMonsterName" />
+
+    <TextView
+        android:id="@+id/txtMonsterDPS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="268dp"
+        android:text="Monster Damage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtHeroDPS"
+        app:layout_constraintTop_toTopOf="@+id/txtHeroDPS" />
+
+    <Button
+        android:id="@+id/btnNxtTurn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="140dp"
+        android:text="First Turn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/txtMonsterDPS"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtMonsterDPS"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/txtCombatLog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.088" />
+
+    <ImageButton
+        android:id="@+id/btnSkill1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="120dp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtMonsterMP"
+        app:layout_constraintEnd_toEndOf="@+id/txtMonsterMP"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtMonsterMP"
+        app:layout_constraintVertical_bias="0.486"
+        app:srcCompat="@drawable/stunbutton"
+        tools:src="@tools:sample/avatars[0]" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
